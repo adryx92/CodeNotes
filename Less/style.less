@@ -1,0 +1,50 @@
+@adry-red: #FF4433;
+@adry-violet: #963483;
+@adry-green: rgb(0, 200, 100);
+
+.row {
+    display: flex;
+}
+  
+/* Create two equal columns that sits next to each other */
+.column1 {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    background-color: @adry-violet;
+}
+
+.column2 {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    background-color: @adry-red;
+}
+
+.border-radius(@radius: 5px) {
+    border-radius: @radius;
+}
+
+.button-size {
+    height: 100px;
+    width: 140px;
+}
+
+.button-color {
+    background-color: @adry-green;
+    &:hover {
+        background-color: @adry-green + rgb(212, 26, 26);
+    }
+}
+
+.button1 {
+    .border-radius();
+    .button-size;
+    .button-color;
+}
+
+.button2 {
+    .border-radius(10px);
+    .button-size;
+    .button-color;
+}
