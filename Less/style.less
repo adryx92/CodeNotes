@@ -6,21 +6,23 @@
     display: flex;
 }
   
+.flex {
+    width: 50%;
+    padding: 10px;
+}
+
 /* Create two equal columns that sits next to each other */
 .column1 {
-    flex: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    .flex;
     background-color: @adry-violet;
 }
 
 .column2 {
-    flex: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    .flex;
     background-color: @adry-red;
 }
 
+// class argument JS-style
 .border-radius(@radius: 5px) {
     border-radius: @radius;
 }
