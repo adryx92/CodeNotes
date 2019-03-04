@@ -1,0 +1,12 @@
+{
+	"presets": [
+		[
+		// preset to make the compiled JS compatible with IE11
+		"@babel/preset-env", {
+		   "targets": {
+		    "ie": "11"
+		  }
+		}
+		]
+  ]
+}

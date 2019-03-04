@@ -1,0 +1,1 @@
+CLI syntax to compile: `npx babel transpile.js --out-dir out`
