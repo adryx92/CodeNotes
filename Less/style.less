@@ -11,7 +11,6 @@
     padding: 10px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column1 {
     .flex;
     background-color: @adry-violet;
@@ -27,9 +26,21 @@
     border-radius: @radius;
 }
 
-.button-size {
+// similar to an if statement
+.button-size (@size) when (@size = 'big') {
     height: 100px;
     width: 140px;
+}
+
+.button-size (@size) when (@size = 'small') {
+   height: 60px;
+   width: 100px;
+}
+
+// default size, if neither big or small
+.button-size (@size) when (default()) {
+    height: 80px;
+    width: 120px;
 }
 
 .button-color {
@@ -42,12 +53,12 @@
 .button1 {
     // empty argument takes default value (parentheses can be omitted)
     .border-radius();
-    .button-size;
+    .button-size('small');
     .button-color;
 }
 
 .button2 {
     .border-radius(10px);
-    .button-size;
+    .button-size('big');
     .button-color;
 }
