@@ -20,3 +20,5 @@ First you have to install it trough npm:
 <code>npm install -g less-plugin-autoprefix</code>.
 
 Then run <code>lessc style.less style.css --autoprefix="browsers"</code>. Autoprefixer uses Browserslist, so you can specify the browsers you want to target in your project with queries like > 5% (see [Best Practices](https://github.com/browserslist/browserslist#best-practices)).
+
+Eg.: <code>lessc style.less style.css --autoprefix="ie 10"</code>.
