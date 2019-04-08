@@ -9,7 +9,7 @@
 You can compile and minify code thanks to the [less-plugin-clean-css](https://github.com/less/less-plugin-clean-css) plugin using [clean-css](https://github.com/jakubpawlowicz/clean-css).
 
 First you have to install it trough npm: 
-<code>npm install less-plugin-clean-css -g</code>.
+<code>npm install -g less-plugin-clean-css</code>.
 
 Then run <code>lessc -clean-css style.less style.min.css</code>.
 
@@ -19,6 +19,6 @@ To better support al browsers version, you can use the [less-plugin-autoprefix](
 First you have to install it trough npm: 
 <code>npm install -g less-plugin-autoprefix</code>.
 
-Then run <code>lessc style.less style.css --autoprefix="browsers"</code>. Autoprefixer uses Browserslist, so you can specify the browsers you want to target in your project with queries like > 5% (see [Best Practices](https://github.com/browserslist/browserslist#best-practices)).
+Then run <code>lessc style.less style.css --autoprefix="browsers"</code>. Autoprefixer uses Browserslist, so you can specify the browsers you want to target in your project with queries like <code>> 5%</code> (see [Best Practices](https://github.com/browserslist/browserslist#best-practices)).
 
 Eg.: <code>lessc style.less style.css --autoprefix="ie 10"</code>.
