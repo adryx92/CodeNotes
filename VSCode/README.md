@@ -1,0 +1,2 @@
+# Visual Studio Code
+* [Visual Studio Code Settings and Extensions for Faster JavaScript Development](https://itnext.io/visual-studio-code-settings-and-extensions-for-faster-javascript-development-12f6d382b060)
