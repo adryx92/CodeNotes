@@ -6,3 +6,5 @@ It explains some very useful stuff:
 * Using a JavaScript module bundler
 * Transpiling code for new language features
 * Using a task runner
+
+Note: instead of sharing the node_modules folder, you only need to share the package.json file and other developers can install the required packages automatically with the command <code>npm install</code>.
