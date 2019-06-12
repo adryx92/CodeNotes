@@ -62,3 +62,15 @@
     .button-size('big');
     .button-color;
 }
+
+// you can create two different style sheets simply commenting and decommenting a variable definition
+@current-style: "one";
+// @current-style: "two";
+
+.my-body-background when (@current-style = "one"){
+    background-color: green;
+}
+
+.my-body-background when (@current-style = "two"){
+    background-color: red;
+}
