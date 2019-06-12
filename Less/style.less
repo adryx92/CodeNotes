@@ -21,12 +21,12 @@
     background-color: @adry-red;
 }
 
-// class argument JS-style
+// class argument JS-style (the default value is 5px)
 .border-radius(@radius: 5px) {
     border-radius: @radius;
 }
 
-// similar to an if statement
+// similar to an if statement: if (size == 'big) ...
 .button-size (@size) when (@size = 'big') {
     height: 100px;
     width: 140px;
@@ -37,16 +37,28 @@
    width: 100px;
 }
 
-// default size, if neither big or small
+// default size, if no argument is passed
 .button-size (@size) when (default()) {
     height: 80px;
     width: 120px;
 }
 
+// this class will be compiled in the generated CSS
 .button-color {
     background-color: @adry-green;
+
+    // hierarchy example
     &:hover {
         background-color: @adry-green + rgb(212, 26, 26);
+    }
+}
+
+// this class won't be compiled in the generated CSS
+.button-color-two() {
+    background-color: @adry-violet;
+
+    &:hover {
+        background-color: @adry-red + rgb(212, 26, 26);
     }
 }
 
@@ -60,7 +72,7 @@
 .button2 {
     .border-radius(10px);
     .button-size('big');
-    .button-color;
+    .button-color-two;
 }
 
 // you can create two different style sheets simply commenting and decommenting a variable definition
