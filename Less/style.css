@@ -39,6 +39,11 @@
 .button2:hover {
   background-color: #ff5e4d;
 }
-.my-body-background {
+body {
   background-color: green;
+}
+.my-image-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./img/green-logo.png");
 }

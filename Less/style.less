@@ -75,15 +75,26 @@
     .button-color-two;
 }
 
-// you can create two different style sheets simply commenting and decommenting a variable definition
-// your output class .my-body-background will contain a red or a green background color
-@current-style: "one";
-// @current-style: "two";
+// you can create two different style sheets simply commenting and decommenting a variable definition trough the if function
 
-.my-body-background when (@current-style = "one"){
-    background-color: green;
+// comment and decomment here!
+@current-style: one;
+// @current-style: two;
+
+@color-one: green;
+@color-two: orange;
+
+// using the if function to assign a color to the variable
+@current-style-color: if(@current-style=one, @color-one, @color-two);
+
+body {
+    background-color: @current-style-color;
 }
 
-.my-body-background when (@current-style = "two"){
-    background-color: red;
+.my-image-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // using the if function to assign the image url to the background property
+    background-image: if(@current-style=one, url("./img/green-logo.png"), url("./img/orange-logo.png"));
 }
