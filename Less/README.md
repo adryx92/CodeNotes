@@ -14,11 +14,11 @@ First you have to install it trough npm:
 Then run <code>lessc -clean-css style.less style.min.css</code>.
 
 ## Add browser prefixes
-To better support al browsers version, you can use the [less-plugin-autoprefix](https://github.com/less/less-plugin-autoprefix) based on the [Autoprefixer](https://github.com/postcss/autoprefixer) post-processor.
+To better support all browsers version, you can use the [less-plugin-autoprefix](https://github.com/less/less-plugin-autoprefix) based on the [Autoprefixer](https://github.com/postcss/autoprefixer) post-processor.
 
 First you have to install it trough npm: 
 <code>npm install -g less-plugin-autoprefix</code>.
 
 Then run <code>lessc style.less style.css --autoprefix="browsers"</code>. Autoprefixer uses Browserslist, so you can specify the browsers you want to target in your project with queries like <code>> 5%</code> (see [Best Practices](https://github.com/browserslist/browserslist#best-practices)).
 
-Eg.: <code>lessc style.less style.css --autoprefix="ie 10"</code>.
+Eg.: <code>lessc style.less style.css --autoprefix="ie >= 10"</code>.
