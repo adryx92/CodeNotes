@@ -1,0 +1,14 @@
+{
+	"products": [
+		{
+			"name": "Pizza",
+			"id": "082850",
+			"price": null
+		},
+		{
+			"name": "Pasta",
+			"id": "082851",
+			"price": null
+		}
+	]
+}
