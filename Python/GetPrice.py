@@ -1,7 +1,5 @@
 import json
-import base64
 import requests
-import datetime
 import os
 import sys
 import colorama
