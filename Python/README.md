@@ -7,4 +7,4 @@ This is sample script that makes GET requests to a server to get the prices of p
 * Install requests library <code>python -m pip install requests</code>
 * Install colorama library <code>python -m pip install colorama</code>
 * Install pyinstaller library <code>python -m pip install pyinstaller</code>
-* Launch Build.bat to create ad .exe file in the /dist directory
+* Launch Build.bat to create an .exe file in the /dist directory
